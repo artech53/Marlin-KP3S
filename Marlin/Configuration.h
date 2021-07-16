@@ -599,9 +599,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else //kp3s
-    #define DEFAULT_Kp  15.53
-    #define DEFAULT_Ki   1.23
-    #define DEFAULT_Kd 49.17
+    #define DEFAULT_Kp 14.17
+    #define DEFAULT_Ki 1.16
+    #define DEFAULT_Kd 43.35
   #endif
 #endif // PIDTEMP
 
@@ -641,9 +641,9 @@
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
   // kp3s
-  #define DEFAULT_bedKp 129.72
-  #define DEFAULT_bedKi 25.28
-  #define DEFAULT_bedKd 443.70
+  #define DEFAULT_bedKp 92.52
+  #define DEFAULT_bedKi 18.36
+  #define DEFAULT_bedKd 310.87
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1666,7 +1666,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
