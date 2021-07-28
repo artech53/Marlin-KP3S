@@ -41,6 +41,8 @@
 #endif
 #undef en
 
+#define DISPLAY_CHARSET_ISO10646_5
+
 namespace Language_en {
   constexpr uint8_t    CHARSIZE                            = 2;
   PROGMEM Language_Str LANGUAGE                            = _UxGT("English");
